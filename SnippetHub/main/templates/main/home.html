@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    {% load static %}
-    <link rel="stylesheet" href="{% static "tinymce/css/prism.css" %}">
-  </head>
-  <body>
-    {% for snip in snippets %}
-      <h1>{{ snip.snippet_title }} ({{ snip.snippet_type}})</h1>
-      <p>{{ snip.snippet_published }}</p>
-      <p>{{ snip.snippet_content |safe}}</p>
-      <br><br>
-    {% endfor %}
-
-    <script src="{% static "tinymce/js/prism.js" %}"></script>
-  </body>
-</html>
+{% extends 'main/header.html' %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      {% for snip in snippets %}
+      <div class="col-xs-12 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ snip.snippet_title }}</h5>
+            <p>{{ snip.snippet_type}}</p>
+            <h6 class="card-subtitle mb-2 text-muted">{{ snip.snippet_published }}</h6>
+            <p class="card-text">{{ snip.snippet_content |safe}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
