@@ -24,7 +24,6 @@
 
     <ul class="sidenav w3-black w3-hoverable w3-border w3-border-white" id="mobile-demo">
       <h2 class="w3-margin-left">Popular Posts</h2>
-      <li class="w3-hover-green w3-border-top w3-border-bottom w3-border-white"><a class="w3-text-white" href="sass.html">Sass</a></li>
     </ul>
 
   <!-- Header -->
@@ -35,7 +34,7 @@
   </div>
   <!-- Scroll Spy -->
   <header class="w3-container w3-center w3-padding-32">
-    <h1><b>Snippy</b></h1>
+    <a href="/"><h1><b>Snippy</b></h1></a>
     <p>A collection of some useful <span class="w3-tag w3-green">code snippets</span></p>
   </header>
 
@@ -45,16 +44,7 @@
 
   <!-- Blog entries -->
   <div class="w3-col l8 s12" id="posts">
-    <!-- Blog entry -->
-    <div class="w3-card-4 w3-margin w3-black w3-text-green w3-border w3-border-green">
-      <div class="w3-container">
-        <h3><b>TITLE HEADING</b></h3>
-        <h5>Title description</h5>
-      </div>
-      <div class="w3-container">
-        <pre class="code"></pre>
-      </div>
-    </div>
+
   <!-- END BLOG ENTRIES -->
   </div>
   <!-- Introduction menu -->
@@ -67,7 +57,7 @@
       <p>I have been writing code since 2016, and taught myself a handful of skills and programming languages. I love working with python, doing frontend development, data analytics and problem solving.</p>
       <a href="https://ritvik19.github.io/" target="_blank"><ion-icon name="person" size="large" role="img" class="icon-large hydrated" aria-label="person"></ion-icon></a>
       <a href="https://www.linkedin.com/in/ritvik-rastogi-003085153/" target="_blank"><ion-icon name="logo-linkedin" size="large" role="img" class="icon-large hydrated" aria-label="logo linkedin"></ion-icon></a>
-      <a href="https://www.facebook.com/ritvik.rastogi" target="_blank"><ion-icon name="logo-facebook" size="large" role="img" class="icon-large hydrated" aria-label="logo facebook"></ion-icon></a>
+      <a  href="https://www.facebook.com/ritvik.rastogi" target="_blank"><ion-icon name="logo-facebook" size="large" role="img" class="icon-large hydrated" aria-label="logo facebook"></ion-icon></a>
       <a href="https://github.com/Ritvik19" target="_blank"><ion-icon name="logo-github" size="large" role="img" class="icon-large hydrated" aria-label="logo github"></ion-icon></a>
       <a href="https://codepen.io/Ritvik19/" target="_blank"><ion-icon name="logo-codepen" size="large" role="img" class="icon-large hydrated" aria-label="logo codepen"></ion-icon></a>
     </div>
@@ -78,10 +68,6 @@
         <h4>Popular Posts</h4>
       </div>
       <ul class="w3-ul w3-hoverable" id="postlist">
-        <li class="w3-padding-16 w3-hover-green">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
       </ul>
     </div>
     <!-- Labels / tags -->
@@ -111,7 +97,7 @@
   <!-- END w3-content -->
   </div>
   <footer class="w3-container w3-black w3-padding-32 w3-margin-top w3-border-top w3-border-white">
-    <button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-border w3-border-white w3-hover-green" style="display:block; margin:auto;">Load More</button>
+    <button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-border w3-border-white w3-hover-green" onclick="loadBlogs(loaded);" style="display:block; margin:auto;" id="loadBtn">Load More</button>
   </footer>
 
 

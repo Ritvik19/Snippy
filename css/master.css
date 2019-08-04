@@ -1,5 +1,3 @@
-/* 282828 */
-
 body{
   background-color: #1c1c1f;
   color: #ffffff;
@@ -7,6 +5,10 @@ body{
 
 .w3-card{
   background-color: #282828 !important;
+}
+
+.w3-card-4 h3,h5, pre{
+  color: #4caf50;
 }
 
 @media only screen and (max-width: 768px) {
