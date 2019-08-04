@@ -4,27 +4,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Snippet Hub</title>
+    <title>Snippy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
   </head>
-  <body class="w3-dark-grey">
+  <body>
   <div class="w3-content" style="max-width:1400px">
 
   <!-- Navbar -->
   <nav>
-    <div class="nav-wrapper w3-black">
+    <div class="nav-wrapper w3-black w3-border-bottom w3-border-white">
       <a href="#!" class="brand-logo"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
-    <ul class="sidenav w3-light-grey w3-hoverable" id="mobile-demo">
+    <ul class="sidenav w3-black w3-hoverable w3-border w3-border-white" id="mobile-demo">
       <h2 class="w3-margin-left">Popular Posts</h2>
-      <li class="w3-hover-green"><a href="sass.html">Sass</a></li>
+      <li class="w3-hover-green w3-border-top w3-border-bottom w3-border-white"><a class="w3-text-white" href="sass.html">Sass</a></li>
     </ul>
 
   <!-- Header -->
@@ -35,8 +35,8 @@
   </div>
   <!-- Scroll Spy -->
   <header class="w3-container w3-center w3-padding-32">
-    <h1><b>Snippet Hub</b></h1>
-    <p>A collection of some useful <span class="w3-tag">code snippets</span></p>
+    <h1><b>Snippy</b></h1>
+    <p>A collection of some useful <span class="w3-tag w3-green">code snippets</span></p>
   </header>
 
 
@@ -46,7 +46,7 @@
   <!-- Blog entries -->
   <div class="w3-col l8 s12" id="posts">
     <!-- Blog entry -->
-    <div class="w3-card-4 w3-margin w3-black w3-text-green">
+    <div class="w3-card-4 w3-margin w3-black w3-text-green w3-border w3-border-green">
       <div class="w3-container">
         <h3><b>TITLE HEADING</b></h3>
         <h5>Title description</h5>
@@ -62,8 +62,8 @@
     <!-- About Card -->
     <div class="w3-card w3-margin w3-margin-top">
     <img src="img/profile.jpeg" style="width:100%">
-    <div class="w3-container w3-white">
-      <h4>Hi I'm <b>Ritvik Rastogi</b></h4>
+    <div class="w3-container">
+      <h4>Hi I'm <b class="w3-tag w3-green"> Ritvik Rastogi </b></h4>
       <p>I have been writing code since 2016, and taught myself a handful of skills and programming languages. I love working with python, doing frontend development, data analytics and problem solving.</p>
       <a href="https://ritvik19.github.io/" target="_blank"><ion-icon name="person" size="large" role="img" class="icon-large hydrated" aria-label="person"></ion-icon></a>
       <a href="https://www.linkedin.com/in/ritvik-rastogi-003085153/" target="_blank"><ion-icon name="logo-linkedin" size="large" role="img" class="icon-large hydrated" aria-label="logo linkedin"></ion-icon></a>
@@ -77,7 +77,7 @@
       <div class="w3-container w3-padding w3-black">
         <h4>Popular Posts</h4>
       </div>
-      <ul class="w3-ul w3-hoverable w3-white" id="postlist">
+      <ul class="w3-ul w3-hoverable" id="postlist">
         <li class="w3-padding-16 w3-hover-green">
           <span class="w3-large">Lorem</span><br>
           <span>Sed mattis nunc</span>
@@ -89,9 +89,9 @@
       <div class="w3-container w3-padding w3-black">
         <h4>Tags</h4>
       </div>
-      <div class="w3-container w3-white">
+      <div class="w3-container">
       <p>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"">Python</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Python</span>
         <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Data Science</span>
         <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Machine Learning</span>
         <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Natural Language Processing</span>
@@ -110,7 +110,8 @@
   </div><br>
   <!-- END w3-content -->
   </div>
-  <footer class="w3-container w3-black w3-padding-32 w3-margin-top">
+  <footer class="w3-container w3-black w3-padding-32 w3-margin-top w3-border-top w3-border-white">
+    <button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-border w3-border-white w3-hover-green" style="display:block; margin:auto;">Load More</button>
   </footer>
 
 
