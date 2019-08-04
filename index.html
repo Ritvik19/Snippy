@@ -7,11 +7,122 @@
     <title>Snippet Hub</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
   </head>
-  <body>
+  <body class="w3-dark-grey">
+  <div class="w3-content" style="max-width:1400px">
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper w3-dark-grey">
+      <a href="#!" class="brand-logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-32">
+    <h1><b>Snippet HUB</b></h1>
+    <p>A collection of some useful <span class="w3-tag">code snippets</span></p>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row">
+
+  <!-- Blog entries -->
+  <div class="w3-col l8 s12">
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-black w3-text-green">
+      <div class="w3-container">
+        <h3><b>TITLE HEADING</b></h3>
+        <h5>Title description</h5>
+      </div>
+      <div class="w3-container">
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  <!-- END BLOG ENTRIES -->
+  </div>
+  <!-- Introduction menu -->
+  <div class="w3-col l4">
+    <!-- About Card -->
+    <div class="w3-card w3-margin w3-margin-top">
+    <img src="img/profile.jpeg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4>Hi I'm <b>Ritvik Rastogi</b></h4>
+      <p>I have been writing code since 2016, and taught myself a handful of skills and programming languages. I love working with python, doing frontend development and data analytics.</p>
+      <a href="https://ritvik19.github.io/" target="_blank"><ion-icon name="person" size="large" role="img" class="icon-large hydrated" aria-label="person"></ion-icon></a>
+      <a href="https://www.linkedin.com/in/ritvik-rastogi-003085153/" target="_blank"><ion-icon name="logo-linkedin" size="large" role="img" class="icon-large hydrated" aria-label="logo linkedin"></ion-icon></a>
+      <a href="https://www.facebook.com/ritvik.rastogi" target="_blank"><ion-icon name="logo-facebook" size="large" role="img" class="icon-large hydrated" aria-label="logo facebook"></ion-icon></a>
+      <a href="https://github.com/Ritvik19" target="_blank"><ion-icon name="logo-github" size="large" role="img" class="icon-large hydrated" aria-label="logo github"></ion-icon></a>
+      <a href="https://codepen.io/Ritvik19/" target="_blank"><ion-icon name="logo-codepen" size="large" role="img" class="icon-large hydrated" aria-label="logo codepen"></ion-icon></a>
+    </div>
+  </div>
+    <!-- Posts -->
+    <div class="w3-card w3-margin" id="popular">
+      <div class="w3-container w3-padding">
+        <h4>Popular Posts</h4>
+      </div>
+      <ul class="w3-ul w3-hoverable w3-white">
+        <li class="w3-padding-16">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large">Dorum</span><br>
+          <span>Ultricies congue</span>
+        </li>
+        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+          <span class="w3-large">Mingsum</span><br>
+          <span>Lorem ipsum dipsum</span>
+        </li>
+      </ul>
+    </div>
+    <!-- Labels / tags -->
+    <div class="w3-card w3-margin">
+      <div class="w3-container w3-padding">
+        <h4>Tags</h4>
+      </div>
+      <div class="w3-container w3-white">
+      <p>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"">Python</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Data Science</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Machine Learning</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Natural Language Processing</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deep Learning</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Web Development</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">HTML</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">CSS</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Java Script</span>
+        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Front End Develpoment</span>
+      </p>
+      </div>
+    </div>
+  <!-- END Introduction Menu -->
+  </div>
+  <!-- END GRID -->
+  </div><br>
+  <!-- END w3-content -->
+  </div>
+  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  </footer>
 
 
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/main.js" charset="utf-8"></script>
