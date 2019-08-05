@@ -60,6 +60,10 @@ function loadBlogs(start=0){
         '</div>'+
         '</div>'
         i ++;
+        if(typeof titles[start+i] == "undefined"){
+          document.getElementById("loadBtn").disabled = true;
+          document.getElementById("loadBtnMob").disabled = true;
+        }
       }
      document.getElementById("posts").innerHTML += HTMLcontent;
      loaded += 3;
@@ -100,4 +104,5 @@ else
   xhttp.open("GET", "data/data.json", true);
   xhttp.send();
   document.getElementById("loadBtn").disabled = true;
+  document.getElementById("loadBtnMob").disabled = true;
 }
