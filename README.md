@@ -1,1 +1,1 @@
-# Snippet-Hub
+# [Snippy](https://snippy.surge.sh)
