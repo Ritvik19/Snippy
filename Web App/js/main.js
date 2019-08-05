@@ -38,7 +38,9 @@ function loadIndex() {
   xhttp.send();
 }
 
-function loadBlogs(start=0){
+function loadBlogs(loaded=0){
+  if(loaded == 0) upperlim = 4;
+  else upperlim = 3
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -48,25 +50,25 @@ function loadBlogs(start=0){
       descriptions = dataObj['Description'];
       codes = dataObj['Code'];
       HTMLcontent = "";
-      while(typeof titles[start+i] !== "undefined" && i<3)
+      while(typeof titles[loaded+i] !== "undefined" && i<upperlim)
       {
         HTMLcontent += '<div class="w3-card-4 w3-margin w3-black">'+
         '<div class="w3-container">'+
-        '<h3><b>'+titles[start+i]+'</b></h3>'+
-        '<h5>'+descriptions[start+i]+'</h5>'+
+        '<h3><b>'+titles[loaded+i]+'</b></h3>'+
+        '<h5>'+descriptions[loaded+i]+'</h5>'+
         '</div>'+
         '<div class="w3-container">'+
-        '<pre class="code">'+codes[start+i]+'</pre>'+
+        '<pre class="code">'+codes[loaded+i]+'</pre>'+
         '</div>'+
         '</div>'
         i ++;
-        if(typeof titles[start+i] == "undefined"){
+        if(typeof titles[loaded+i] == "undefined"){
           document.getElementById("loadBtn").disabled = true;
           document.getElementById("loadBtnMob").disabled = true;
         }
       }
      document.getElementById("posts").innerHTML += HTMLcontent;
-     loaded += 3;
+     loaded += upperlim;
     }
   };
   xhttp.open("GET", "data/data.json", true);
