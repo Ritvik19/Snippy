@@ -1,1 +1,1 @@
-# [Snippy](https://snippy.surge.sh)
+# [Snippy](https://snippy19.surge.sh)
