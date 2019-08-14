@@ -39,8 +39,7 @@ function loadIndex() {
 }
 
 function loadBlogs(loaded=0){
-  if(loaded == 0) upperlim = 4;
-  else upperlim = 3
+  upperlim = 3
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -68,18 +67,17 @@ function loadBlogs(loaded=0){
         }
       }
      document.getElementById("posts").innerHTML += HTMLcontent;
-     loaded += upperlim;
     }
   };
   xhttp.open("GET", "data/data.json", true);
   xhttp.send();
+  return loaded + upperlim;
 }
 loadIndex();
 var params = new URLSearchParams(location.search);
 var q = params.get('q')
 if (q == null){
-  var loaded = 0;
-  loadBlogs(loaded);
+  var loaded = loadBlogs(0);
 }
 else
 {
