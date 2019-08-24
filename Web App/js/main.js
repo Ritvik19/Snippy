@@ -25,7 +25,7 @@ function loadIndex() {
       while(typeof titles[i] !== "undefined")
       {
         HTMLcontent1 += '<li class="w3-hover-green w3-border-top w3-border-bottom w3-border-white"><a class="w3-text-white" href="/?q='+i+'">'+titles[i]+'</a></li>'
-        HTMLcontent2 += '<li class="w3-padding-16 w3-hover-green">'+
+        HTMLcontent2 += '<li class="w3-padding w3-hover-green">'+
           '<a href="/?q='+i+'"><span class="w3-large">'+titles[i]+'</span><br><span>'+descriptions[i]+'</span></a>'+
         '</li>'
         i ++;
