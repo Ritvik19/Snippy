@@ -106,3 +106,20 @@ else
   document.getElementById("loadBtn").disabled = true;
   document.getElementById("loadBtnMob").disabled = true;
 }
+
+function postFilter() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("postInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("postlist");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("span")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
