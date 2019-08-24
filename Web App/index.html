@@ -24,6 +24,7 @@
 
     <ul class="sidenav w3-black w3-hoverable w3-border w3-border-white" id="mobile-demo">
       <h2 class="w3-margin-left">Popular Posts</h2>
+      <input type="text" id="postInputM" onkeyup="postFilter('postInputM', 'mobile-demo', 'a')" class="w3-margin-left w3-text-white" placeholder="Search for posts..">
     </ul>
 
   <!-- Header -->
@@ -34,7 +35,7 @@
   </div>
   <!-- Scroll Spy -->
   <header class="w3-container w3-center w3-padding-32">
-    <a href="/"><h1><b>Snippy</b></h1></a>
+    <a href="/"><h1><img src="img/logo.jpg" width="50" height="50"> <b>Snippy</b></h1></a>
     <p>A collection of some useful <span class="w3-tag w3-green">code snippets</span></p>
   </header>
 
@@ -69,7 +70,7 @@
     <div class="w3-card w3-margin" id="popular">
       <div class="w3-container w3-padding w3-black">
         <h4>Popular Posts</h4>
-        <input type="text" id="postInput" onkeyup="postFilter()" class="w3-text-white" placeholder="Search for posts..">
+        <input type="text" id="postInput" onkeyup="postFilter('postInput', 'postlist', 'span')" class="w3-text-white" placeholder="Search for posts..">
       </div>
       <ul class="w3-ul w3-hoverable" id="postlist">
       </ul>

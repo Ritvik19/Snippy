@@ -107,14 +107,14 @@ else
   document.getElementById("loadBtnMob").disabled = true;
 }
 
-function postFilter() {
+function postFilter(inputEl, listEl, element) {
     var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("postInput");
+    input = document.getElementById(inputEl);
     filter = input.value.toUpperCase();
-    ul = document.getElementById("postlist");
+    ul = document.getElementById(listEl);
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("span")[0];
+        a = li[i].getElementsByTagName(element)[0];
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
