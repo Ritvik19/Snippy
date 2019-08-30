@@ -11,6 +11,11 @@ body{
   color: #4caf50;
 }
 
+#popular{
+  max-height: 480px;
+  overflow-y: scroll;
+}
+
 @media only screen and (max-width: 768px) {
   #popular{
     display: none;
