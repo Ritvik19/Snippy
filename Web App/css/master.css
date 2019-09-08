@@ -11,8 +11,8 @@ body{
   color: #4caf50;
 }
 
-#popular{
-  max-height: 480px;
+#postlist{
+  max-height: 420px;
   overflow-y: scroll;
 }
 
