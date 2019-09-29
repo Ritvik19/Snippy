@@ -103,3 +103,17 @@ html {
   background: #4caf50;
   width: 0%;
 }
+
+/* label color */
+.input-field label {
+ color: #4caf50 !important:
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: #4caf50 !important:
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid  #4caf50 !important:
+ box-shadow: 0 1px 0 0  #4caf50 !important:
+}
