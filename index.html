@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,112 +11,137 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
-  </head>
-  <body>
-  <div class="w3-content" style="max-width:1400px">
+</head>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="nav-wrapper w3-black w3-border-bottom w3-border-white">
-      <a href="#!" class="brand-logo"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+<body>
+    <div class="w3-content" style="max-width:1400px">
 
-    <ul class="sidenav w3-black w3-hoverable w3-border w3-border-white" id="mobile-demo">
-      <h2 class="w3-margin-left">Popular Posts</h2>
-      <input type="text" id="postInputM" onkeyup="postFilter('postInputM', 'mobile-demo', 'a')" class="w3-margin-left w3-text-white" placeholder="Search for posts..">
-    </ul>
+        <!-- Navbar -->
+        <nav>
+            <div class="nav-wrapper w3-black w3-border-bottom w3-border-white">
+                <a href="#!" class="brand-logo"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
 
-  <!-- Header -->
-  <div class="header">
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
-    </div>
-  </div>
-  <!-- Scroll Spy -->
-  <header class="w3-container w3-center w3-padding-32">
-    <a href="/"><h1><img src="img/logo.jpg" width="50" height="50"> <b>Snippy</b></h1></a>
-    <p>Your <span class="w3-tag w3-green">code snippets</span> repository</p>
-  </header>
+        <ul class="sidenav w3-black w3-hoverable w3-border w3-border-white" id="mobile-demo">
+            <h2 class="w3-margin-left">Popular Posts</h2>
+            <input type="text" id="postInputM" onkeyup="postFilter('postInputM', 'mobile-demo', 'a')" class="w3-margin-left w3-text-white" placeholder="Search for posts..">
+        </ul>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+        <!-- Scroll Spy -->
+        <header class="w3-container w3-center w3-padding-32">
+            <a href="/">
+                <h1><img src="img/logo.jpg" width="50" height="50"> <b>Snippy</b></h1>
+            </a>
+            <p>
+                Nothing more than
+                <span class="w3-tag w3-green">expressions</span>
+                <span class="w3-tag w3-green">iterations</span> &
+                <span class="w3-tag w3-green">decisions</span>
+            </p>
+        </header>
 
 
-  <!-- Grid -->
-  <div class="w3-row">
+        <!-- Grid -->
+        <div class="w3-row">
 
-  <!-- Blog entries -->
-  <div class="w3-col l8 s12" id="posts">
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12" id="posts">
 
-  <!-- END BLOG ENTRIES -->
-  </div>
-  <!-- Introduction menu -->
-  <div class="w3-col l4">
-    <div class="w3-card w3-margin w3-margin-top" id="loadCard">
-      <button class="w3-button w3-black w3-padding-large w3-border w3-border-white w3-hover-green" onclick="loaded = loadBlogs(loaded);" style="display:block; margin:auto;" id="loadBtnMob">Load More</button>
+                <!-- END BLOG ENTRIES -->
+            </div>
+            <!-- Introduction menu -->
+            <div class="w3-col l4">
+                <div class="w3-card w3-margin w3-margin-top" id="loadCard">
+                    <button class="w3-button w3-black w3-padding-large w3-border w3-border-white w3-hover-green" onclick="loaded = loadBlogs(loaded);" style="display:block; margin:auto;" id="loadBtnMob">Load More</button>
+                </div>
+                <!-- About Card -->
+                <div class="w3-card w3-margin w3-margin-top">
+                    <img src="img/profile.jpeg" style="width:100%">
+                    <div class="w3-container">
+                        <h4>Hi I'm <b class="w3-tag w3-green"> Ritvik Rastogi </b></h4>
+                        <p>I have been writing code since 2016, and taught myself a handful of skills and programming languages. I love working with python, doing frontend development, data analytics and problem solving.</p>
+                        <a href="https://ritvik19.github.io/" target="_blank">
+                            <ion-icon name="person" size="large" role="img" class="icon-large hydrated" aria-label="person"></ion-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ritvik-rastogi-003085153/" target="_blank">
+                            <ion-icon name="logo-linkedin" size="large" role="img" class="icon-large hydrated" aria-label="logo linkedin"></ion-icon>
+                        </a>
+                        <a href="https://www.facebook.com/ritvik.rastogi" target="_blank">
+                            <ion-icon name="logo-facebook" size="large" role="img" class="icon-large hydrated" aria-label="logo facebook"></ion-icon>
+                        </a>
+                        <a href="https://github.com/Ritvik19" target="_blank">
+                            <ion-icon name="logo-github" size="large" role="img" class="icon-large hydrated" aria-label="logo github"></ion-icon>
+                        </a>
+                        <a href="https://codepen.io/Ritvik19/" target="_blank">
+                            <ion-icon name="logo-codepen" size="large" role="img" class="icon-large hydrated" aria-label="logo codepen"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <!-- Posts -->
+                <div class="w3-card w3-margin" id="popular">
+                    <div class="w3-container w3-padding w3-black">
+                        <h4>Popular Posts</h4>
+                        <input type="text" id="postInput" onkeyup="postFilter('postInput', 'postlist', 'span')" class="w3-text-white" placeholder="Search for posts..">
+                    </div>
+                    <ul class="w3-ul w3-hoverable" id="postlist">
+                    </ul>
+                </div>
+                <!-- Labels / tags -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                        <h4>Tags</h4>
+                    </div>
+                    <div class="w3-container">
+                        <p>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Python</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Data Science</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Data Analytics</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Numpy</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pandas</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Machine Learning</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Scikit Learn</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Natural Language Processing</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Text Analytics</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NLTK</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deep Learning</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Neural Networks</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Keras</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Flask</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Web Development</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">HTML</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">CSS</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Java Script</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Front End Develpoment</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding w3-black">
+                        <h4>Contribute</h4>
+                    </div>
+                    <div class="w3-container">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZbMQaAt9ZuYhq8RzVSvlPsTnq_nsA_qiN_VDZBmAsLLTPNA/viewform?usp=sf_link" target="_blank">
+                            <p>Suggest some snippets</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- END Introduction Menu -->
+            </div>
+            <!-- END GRID -->
+        </div><br>
+        <!-- END w3-content -->
     </div>
-    <!-- About Card -->
-    <div class="w3-card w3-margin w3-margin-top">
-    <img src="img/profile.jpeg" style="width:100%">
-    <div class="w3-container">
-      <h4>Hi I'm <b class="w3-tag w3-green"> Ritvik Rastogi </b></h4>
-      <p>I have been writing code since 2016, and taught myself a handful of skills and programming languages. I love working with python, doing frontend development, data analytics and problem solving.</p>
-      <a href="https://ritvik19.github.io/" target="_blank"><ion-icon name="person" size="large" role="img" class="icon-large hydrated" aria-label="person"></ion-icon></a>
-      <a href="https://www.linkedin.com/in/ritvik-rastogi-003085153/" target="_blank"><ion-icon name="logo-linkedin" size="large" role="img" class="icon-large hydrated" aria-label="logo linkedin"></ion-icon></a>
-      <a  href="https://www.facebook.com/ritvik.rastogi" target="_blank"><ion-icon name="logo-facebook" size="large" role="img" class="icon-large hydrated" aria-label="logo facebook"></ion-icon></a>
-      <a href="https://github.com/Ritvik19" target="_blank"><ion-icon name="logo-github" size="large" role="img" class="icon-large hydrated" aria-label="logo github"></ion-icon></a>
-      <a href="https://codepen.io/Ritvik19/" target="_blank"><ion-icon name="logo-codepen" size="large" role="img" class="icon-large hydrated" aria-label="logo codepen"></ion-icon></a>
-    </div>
-    </div>
-    <!-- Posts -->
-    <div class="w3-card w3-margin" id="popular">
-      <div class="w3-container w3-padding w3-black">
-        <h4>Popular Posts</h4>
-        <input type="text" id="postInput" onkeyup="postFilter('postInput', 'postlist', 'span')" class="w3-text-white" placeholder="Search for posts..">
-      </div>
-      <ul class="w3-ul w3-hoverable" id="postlist">
-      </ul>
-    </div>
-    <!-- Labels / tags -->
-    <div class="w3-card w3-margin">
-      <div class="w3-container w3-padding w3-black">
-        <h4>Tags</h4>
-      </div>
-      <div class="w3-container">
-      <p>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Python</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Data Science</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Data Analytics</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Machine Learning</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Natural Language Processing</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Text Analytics</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deep Learning</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Neural Networks</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Flask</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Web Development</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">HTML</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">CSS</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Java Script</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Front End Develpoment</span>
-      </p>
-      </div>
-    </div>
-    <div class="w3-card w3-margin">
-      <div class="w3-container w3-padding w3-black">
-        <h4>Contribute</h4>
-      </div>
-      <div class="w3-container">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZbMQaAt9ZuYhq8RzVSvlPsTnq_nsA_qiN_VDZBmAsLLTPNA/viewform?usp=sf_link" target="_blank"> <p>Suggest some snippets</p> </a>
-      </div>
-    </div>
-  <!-- END Introduction Menu -->
-  </div>
-  <!-- END GRID -->
-  </div><br>
-  <!-- END w3-content -->
-  </div>
-  <footer class="w3-container w3-black w3-padding-32 w3-margin-top w3-border-top w3-border-white">
-    <button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-border w3-border-white w3-hover-green" onclick="loaded = loadBlogs(loaded);" style="display:block; margin:auto;" id="loadBtn">Load More</button>
-  </footer>
+    <footer class="w3-container w3-black w3-padding-32 w3-margin-top w3-border-top w3-border-white">
+        <button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-border w3-border-white w3-hover-green" onclick="loaded = loadBlogs(loaded);" style="display:block; margin:auto;" id="loadBtn">Load More</button>
+    </footer>
 
 
 
@@ -123,5 +149,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/main.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>
