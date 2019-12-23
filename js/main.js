@@ -65,6 +65,7 @@ function loadBlogs(loaded = 0) {
             titles = dataObj["Title"];
             descriptions = dataObj["Description"];
             codes = dataObj["Code"];
+            meta = dataObj["Meta"];
             HTMLcontent = "";
             while (typeof titles[loaded + i] !== "undefined" && i < upperlim) {
                 HTMLcontent +=
@@ -109,6 +110,7 @@ if (q == null) {
             titles = dataObj["Title"];
             descriptions = dataObj["Description"];
             codes = dataObj["Code"];
+            meta = dataObj["Meta"];
             HTMLcontent = "";
             HTMLcontent +=
                 '<div class="w3-card-4 w3-margin w3-black">' +

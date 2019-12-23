@@ -1,119 +1,152 @@
-body{
-  background-color: #1c1c1f;
-  color: #ffffff;
+body {
+    background-color: #1c1c1f;
+    color: #ffffff;
 }
 
-.w3-card{
-  background-color: #282828 !important;
+.w3-card {
+    background-color: #282828 !important;
 }
 
-.w3-card-4 h3,h5, pre{
-  color: #4caf50;
+.w3-card-4 h3,
+h5,
+pre {
+    color: #4caf50;
 }
 
-#postlist{
-  max-height: 420px;
-  overflow-y: scroll;
+pre img {
+    width: 100%;
+}
+
+#postlist {
+    max-height: 420px;
+    overflow-y: scroll;
 }
 
 @media only screen and (max-width: 768px) {
-  #popular{
-    display: none;
-  }
-  #loadBtn{
-    visibility: hidden;
-  }
+    #popular {
+        display: none;
+    }
+    #loadBtn {
+        visibility: hidden;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-  nav{
-    display: none;
-  }
-  #loadCard{
-    display: none;
-  }
+    nav {
+        display: none;
+    }
+    #loadCard {
+        display: none;
+    }
 }
 
-*,h1,h2,h3,h4,h5,h6,pre,button{
-  font-family: 'Source Code Pro', monospace;
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+button {
+    font-family: 'Source Code Pro', monospace;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-#loadCard{
-  background-color: #000000 !important;
-  height: 100px;
-  position: relative;
+#loadCard {
+    background-color: #000000 !important;
+    height: 100px;
+    position: relative;
 }
 
-#loadBtnMob{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+#loadBtnMob {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.code{
-  max-height: 500px;
-  overflow-x: scroll;
-  overflow-y: scroll;
+.code {
+    max-height: 500px;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
+
 
 /* width */
+
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
+
 
 /* Track */
+
 ::-webkit-scrollbar-track {
-  background: #000000;
+    background: #000000;
 }
+
 
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
-  background: #4caf50;
+    background: #4caf50;
 }
 
+
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #4caf50;
+    background: #4caf50;
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
 }
+
 
 /* The progress container */
+
 .progress-container {
-  width: 100%;
-  height: 8px;
-  background: #000000;
+    width: 100%;
+    height: 8px;
+    background: #000000;
 }
+
 
 /* The progress bar (scroll indicator) */
+
 .progress-bar {
-  height: 8px;
-  background: #4caf50;
-  width: 0%;
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
 }
 
+
 /* label color */
+
 .input-field label {
- color: #4caf50 !important:
+    color: #4caf50 !important:
 }
+
+
 /* label focus color */
-.input-field input[type=text]:focus + label {
- color: #4caf50 !important:
+
+.input-field input[type=text]:focus+label {
+    color: #4caf50 !important:
 }
+
+
 /* label underline focus color */
+
 .input-field input[type=text]:focus {
- border-bottom: 1px solid  #4caf50 !important:
- box-shadow: 0 1px 0 0  #4caf50 !important:
+    border-bottom: 1px solid #4caf50 !important: box-shadow: 0 1px 0 0 #4caf50 !important:
 }
