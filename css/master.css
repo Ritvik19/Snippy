@@ -77,29 +77,17 @@ html {
     overflow-y: scroll;
 }
 
-
-/* width */
-
 ::-webkit-scrollbar {
     width: 10px;
 }
-
-
-/* Track */
 
 ::-webkit-scrollbar-track {
     background: #000000;
 }
 
-
-/* Handle */
-
 ::-webkit-scrollbar-thumb {
     background: #4caf50;
 }
-
-
-/* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
     background: #4caf50;
@@ -112,17 +100,11 @@ html {
     width: 100%;
 }
 
-
-/* The progress container */
-
 .progress-container {
     width: 100%;
     height: 8px;
     background: #000000;
 }
-
-
-/* The progress bar (scroll indicator) */
 
 .progress-bar {
     height: 8px;
@@ -130,23 +112,24 @@ html {
     width: 0%;
 }
 
-
-/* label color */
-
 .input-field label {
-    color: #4caf50 !important:
+    color: #4caf50 !important;
 }
-
-
-/* label focus color */
 
 .input-field input[type=text]:focus+label {
-    color: #4caf50 !important:
+    color: #4caf50 !important;
 }
 
-
-/* label underline focus color */
-
 .input-field input[type=text]:focus {
-    border-bottom: 1px solid #4caf50 !important: box-shadow: 0 1px 0 0 #4caf50 !important:
+    border-bottom: 1px solid #4caf50 !important;
+    box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+p.blog {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+a.blog {
+    text-decoration: underline;
 }
