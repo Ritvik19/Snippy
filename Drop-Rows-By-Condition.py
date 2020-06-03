@@ -1,0 +1,1 @@
+df = df.drop(df[<some boolean condition>].index)

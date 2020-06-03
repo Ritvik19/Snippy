@@ -1,0 +1,8 @@
+.text {
+    background-image: url('img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}

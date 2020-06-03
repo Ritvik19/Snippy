@@ -1,0 +1,21 @@
+.col-container {
+    display: table;
+    /* Make the container element behave like a table */
+    width: 100%;
+    /* Set full-width to expand the whole page */
+}
+
+.col {
+    display: table-cell;
+    /* Make elements inside the container behave like table cells */
+}
+
+
+/* If the browser window is smaller than 600px, make the columns stack on top of each other */
+
+@media only screen and (max-width: 600px) {
+    .col {
+        display: block;
+        width: 100%;
+    }
+}

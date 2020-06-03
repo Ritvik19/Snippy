@@ -1,0 +1,4 @@
+.wrapped {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
