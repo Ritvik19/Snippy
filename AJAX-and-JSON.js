@@ -8,7 +8,7 @@ function loadCode() {
             col1 = dataObj['col1']
             content = ''
             var i = 0;
-            while (typeof program_name[i] !== "undefined") {
+            while (typeof col1[i] !== "undefined") {
                 content += col1[i] + '\n'
             }
             document.getElementById("demo").innerHTML = content;

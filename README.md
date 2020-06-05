@@ -1,3 +1,3 @@
-# [Snippy](https://snippy19.surge.sh)
+# Snippy
 
 The Online Code Repository
