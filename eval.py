@@ -4,5 +4,5 @@
 add = "1+5+6"
 display = "print('Hello')"
 
-print (eval(add))  # 12
-eval(display)      # Hello
+print(eval(add))  # 12
+eval(display)  # Hello

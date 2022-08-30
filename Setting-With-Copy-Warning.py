@@ -1,4 +1,4 @@
-# instead of 
-df[df['gender'] == 'F']['gender'] = 'Female'
+# instead of
+df[df["gender"] == "F"]["gender"] = "Female"
 # do
-df.loc[df['gender'] == 'F', 'gender'] = 'Female'
+df.loc[df["gender"] == "F", "gender"] = "Female"

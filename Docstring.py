@@ -1,6 +1,7 @@
 def add(a, b):
     """this function takes 2 numbers and return their sum"""
-    return a+b
+    return a + b
+
 
 print(add.__doc__)
 
@@ -8,9 +9,11 @@ print(add.__doc__)
 # this function takes 2 numbers and return their sum
 
 
-class Car():
+class Car:
     """this is a class"""
+
     pass
+
 
 print(Car.__doc__)
 

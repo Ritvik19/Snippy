@@ -10,10 +10,10 @@ context = ssl.create_default_context()
 
 # Try to log in to server and send email
 try:
-    server = smtplib.SMTP(smtp_server,port)
-    server.ehlo() # Can be omitted
-    server.starttls(context=context) # Secure the connection
-    server.ehlo() # Can be omitted
+    server = smtplib.SMTP(smtp_server, port)
+    server.ehlo()  # Can be omitted
+    server.starttls(context=context)  # Secure the connection
+    server.ehlo()  # Can be omitted
     server.login(sender_email, password)
     # TODO: Send email here
     server.sendmail(sender_email, receiver_email, message)

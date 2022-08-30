@@ -1,10 +1,10 @@
-# You can use the chardet module to detect the charset of a file. 
-# This can come in very useful when analyzing big piles of random text. 
+# You can use the chardet module to detect the charset of a file.
+# This can come in very useful when analyzing big piles of random text.
 # Install with:
 
 #! pip install chardet
 
-# You now have an extra command-line tool called chardetect, 
+# You now have an extra command-line tool called chardetect,
 # which can be used like this:
 
 #! chardetect somefile.txt

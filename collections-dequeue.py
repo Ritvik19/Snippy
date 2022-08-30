@@ -1,4 +1,5 @@
 from collections import deque
+
 d = deque()
 d.append(1)
 print(d)
@@ -9,26 +10,26 @@ print(d)
 d.clear()
 print(d)
 # deque([])
-d.extend('1')
+d.extend("1")
 print(d)
 # deque(['1'])
-d.extendleft('234')
+d.extendleft("234")
 print(d)
 # deque(['4', '3', '2', '1'])
-d.count('1')
+d.count("1")
 # 1
 d.pop()
 # '1'
 print(d)
 # deque(['4', '3', '2'])
 # d.popleft()
-'4'
+"4"
 print(d)
 # deque(['3', '2'])
-d.extend('7896')
+d.extend("7896")
 print(d)
 # deque(['3', '2', '7', '8', '9', '6'])
-d.remove('2')
+d.remove("2")
 print(d)
 # deque(['3', '7', '8', '9', '6'])
 d.reverse()

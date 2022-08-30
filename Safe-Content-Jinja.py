@@ -1,3 +1,3 @@
-# Disable Auto Escaping: 
+# Disable Auto Escaping:
 
 # {{ content|safe }}

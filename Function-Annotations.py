@@ -1,5 +1,6 @@
-def power(a: int, b:int) ->int:
-    return a**b
+def power(a: int, b: int) -> int:
+    return a ** b
+
 
 print(power.__annotations__)
 
