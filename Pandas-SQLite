@@ -1,0 +1,16 @@
+import sqlite3
+import pandas as pd
+
+cnx = sqlite3.connect("sqlite.db")
+
+tables = pd.read_sql_query("""
+SELECT
+    name
+FROM
+    sqlite_schema
+WHERE
+    type ='table' AND
+    name NOT LIKE 'sqlite_%';
+""", cnx)
+
+df = pd.read_sql_query("SELECT * FROM table_name", cnx)
